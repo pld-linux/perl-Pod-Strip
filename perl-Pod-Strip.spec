@@ -7,13 +7,13 @@
 Summary:	Pod::Strip - Remove POD from Perl code
 Summary(pl.UTF-8):	Pod::Strip - usuwanie POD z kodu perlowego
 Name:		perl-Pod-Strip
-Version:	1.02
-Release:	2
+Version:	1.100
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/Pod/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	b5ac7b0e68d8d44bd737f1ba71aaee3f
+Source0:	https://www.cpan.org/modules/by-module/Pod/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	20382a30d2161fd5979fffc0960ee93b
 URL:		http://search.cpan.org/dist/Pod-Strip/
 BuildRequires:	perl-Module-Build
 BuildRequires:	perl-devel >= 1:5.8.0
@@ -53,6 +53,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc Changes README TODO
+%doc Changes README.md
 %{perl_vendorlib}/Pod/Strip.pm
 %{_mandir}/man3/Pod::Strip.3pm*
